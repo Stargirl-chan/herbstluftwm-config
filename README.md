@@ -1,6 +1,8 @@
 # Herbstluftwm-config
 
 This repo holds my personal config files for Herbstluftwm
+It looks like this:
+![Herbstluftwm on DragonflyBSD](https://imgur.com/GbpHrpH)
 
 ## Q&A
 
