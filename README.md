@@ -1,10 +1,8 @@
 # Herbstluftwm-config
-***
 
 This repo holds my personal config files for Herbstluftwm
 
 ### Q&A
-***
 
 **Can I use this?** *Maybe*
 
