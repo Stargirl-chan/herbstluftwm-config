@@ -1,0 +1,40 @@
+! special
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
+
+! black
+*.color0:       #282a2e
+*.color8:       #373b41
+
+! red
+*.color1:       #ab0000
+*.color9:       #ff0000
+
+! green
+*.color2:       #afc200
+*.color10:      #e7ff00
+
+! yellow
+*.color3:       #ff6800
+*.color11:      #ffa900
+
+! blue
+*.color4:       #006dc8
+*.color12:      #008aff
+
+! magenta
+*.color5:       #7800a1
+*.color13:      #c400ff
+
+! cyan
+*.color6:       #00a38e
+*.color14:      #00ffdd
+
+! white
+*.color7:       #b2b2b2
+*.color15:      #c8c8c8
+
+! font
+*.font:	Ubuntu Mono:pixelsize=14:antialias=true:autohint=true;
+*.alpha: 0.6
