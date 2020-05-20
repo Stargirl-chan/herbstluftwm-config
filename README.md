@@ -2,7 +2,7 @@
 
 This repo holds my personal config files for Herbstluftwm
 It looks like this:
-![Herbstluftwm on DragonflyBSD](https://imgur.com/GbpHrpH)
+![Herbstluftwm on DragonflyBSD](https://github.com/Stargirl-chan/herbstluftwm-config/blob/master/dfly.png)
 
 ## Q&A
 
