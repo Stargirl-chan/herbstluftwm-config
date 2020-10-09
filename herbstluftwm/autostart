@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 function hc() {
     herbstclient "$@"
@@ -16,7 +16,7 @@ Mod=Super
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-c close
-hc keybind $Mod-Return spawn st
+hc keybind $Mod-Return spawn alacritty
 hc keybind $Mod-F3 spawn dmenu_run
 
 # tags
@@ -116,6 +116,9 @@ hc rule class~'[Ww]bar' manage=off
 hc rule class~'[Cc]onky' manage=off
 hc rule class~'[Ff]brun' pseudotile=on
 hc rule class~'dmenu_run' pseudotile=on
+
+#setting values from Xresources
+xrdb -merge ~/.Xresources
 
 #Autostart Programs
 #xcompmgr -c -r10 -F -f -D5 -C -o0.8 &
