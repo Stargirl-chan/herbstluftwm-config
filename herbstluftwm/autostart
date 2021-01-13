@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 function hc() {
     herbstclient "$@"
@@ -18,6 +18,9 @@ hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-c close
 hc keybind $Mod-Return spawn alacritty
 hc keybind $Mod-F3 spawn dmenu_run
+hc keybind $Mod-F4 spawn ~/.config/herbstluftwm/wselect.sh
+hc keybind Alt-F10  spawn amixer set 'Master' 1%-
+hc keybind Alt-F11 spawn amixer set 'Master' 1%+
 
 # tags
 TAG_NAMES=( {1..6} )
@@ -75,7 +78,9 @@ hc keybind $Mod-Shift-Right shift right
 
 # background and color
 #feh --bg-fill /home/$USER/.config/herbstluftwm/21599.jpg
-feh --bg-fill /home/$USER/.config/herbstluftwm/komachi.jpg
+#feh --bg-fill /home/$USER/.config/herbstluftwm/komachi.jpg
+#feh --bg-fill /home/$USER/.config/herbstluftwm/tc.png
+feh --bg-fill /home/$USER/.config/herbstluftwm/toyosatomimi_2.jpg
 hc set frame_border_active_color '#222222'
 hc set frame_border_normal_color '#101010'
 hc set frame_bg_normal_color 'transparent'
@@ -117,13 +122,14 @@ hc rule class~'[Cc]onky' manage=off
 hc rule class~'[Ff]brun' pseudotile=on
 hc rule class~'dmenu_run' pseudotile=on
 
-#setting values from Xresources
-xrdb -merge ~/.Xresources
 
 #Autostart Programs
 #xcompmgr -c -r10 -F -f -D5 -C -o0.8 &
-pulseaudio --start &
-twmnd &
+pulseaudio --start -D &
+#/home/star/sources/pipewire-0.3.17/build/src/daemon/pipewire &
+#twmnd &
+dunst &
+xrdb -merge ~/.Xresources
 #picom -b &
 
 # unlock, just to be sure
